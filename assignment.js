@@ -14,16 +14,20 @@ console.log(nanimiter);
 
 //megaFriend finding:
 
-function kilomiterToMiter(kilomiter){
-    var miter = kilomiter * 1000;
-    return miter;
+var name = ["Md. Raton", "Abu Saleh Mahmud", "Kabir", "Ferdous Rahman", "Mominur Rahman"];
+
+function megaFriend(name) {
+  var stringSize = name[0];
+  for (i = 0; i < name.length; i++) {
+    if (name[i].length > stringSize.length) {
+      stringSize = name[i];
+      return stringSize;
+    }
+  }
+  
 }
 
-var nanamiter = kilomiterToMiter(2);
-console.log(nanamiter);
-
-var nanimiter = kilomiterToMiter(5);
-console.log(nanimiter);
+console.log(megaFriend(name));
 //end of megaFriend finding
 
 //budgetCalculator:

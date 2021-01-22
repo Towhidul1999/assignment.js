@@ -5,9 +5,10 @@ function megaFriend(name) {
   for (i = 0; i < name.length; i++) {
     if (name[i].length > stringSize.length) {
       stringSize = name[i];
+      return stringSize;
     }
   }
-  return stringSize;
+  
 }
 
 console.log(megaFriend(name));
